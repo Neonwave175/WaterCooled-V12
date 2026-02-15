@@ -15,7 +15,7 @@ model = Qwen3TTSModel.from_pretrained(
     attn_implementation="eager",
 )
 
-ref_audio = "/Users/jabn/Downloads/Converted.wav"
+ref_audio = "Converted.wav"
 ref_text  = "This is a bunch of scripts intended to be used by anyone to find stuff without remembering the formula and other things"
 
 wavs, sr = model.generate_voice_clone(
